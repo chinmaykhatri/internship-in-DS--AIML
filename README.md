@@ -6,7 +6,7 @@
 
 ## 🎯 Program Overview
 
-This repository documents a **34-day intensive training** covering the complete Data Science pipeline — from Python fundamentals to building production-ready ML models and interactive analytics dashboards. Each day builds on the previous one, progressing from core programming concepts to advanced machine learning techniques.
+This repository documents a **45-day intensive training** covering the complete Data Science pipeline — from Python fundamentals to building production-ready ML models and interactive analytics dashboards. Each day builds on the previous one, progressing from core programming concepts to advanced machine learning techniques.
 
 ---
 
@@ -128,27 +128,6 @@ A complete ML regression pipeline using the `diamonds.csv` dataset:
 | **Web Dashboard** | Streamlit |
 | **Notebooks** | Jupyter Notebook |
 | **Serialization** | Pickle |
-
----
-
-## ⚙️ Getting Started
-
-### Prerequisites
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn streamlit plotly
-```
-
-### Run the Dashboard
-```bash
-cd GRASS
-streamlit run app.py
-```
-
-### Open Jupyter Notebooks
-```bash
-cd GRASS
-jupyter notebook
-```
 
 ---
 
