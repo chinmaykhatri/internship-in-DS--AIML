@@ -4,7 +4,8 @@
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange?style=for-the-badge&logo=scikit-learn&logoColor=white" />
   <img src="https://img.shields.io/badge/Deep%20Learning-TensorFlow%20%2F%20Keras-red?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Web%20Apps-Streamlit%20%2F%20Flask%20%2F%20Django-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Data%20Science-NumPy%20%2F%20Pandas%20%2F%20Matplotlib%20%2F%20Seaborn-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AI-Neural%20Networks%20%2F%20NLP-purple?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Complete-success?style=for-the-badge" />
 </p>
 
