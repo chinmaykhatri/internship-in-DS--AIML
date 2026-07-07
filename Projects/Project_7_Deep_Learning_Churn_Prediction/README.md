@@ -1,18 +1,40 @@
 # Customer Churn Prediction
 
-## End-to-End Data Science Project
+## Overview
+End-to-end data science project predicting customer churn using multiple ML models and a Neural Network.
 
-A comprehensive data science project demonstrating EDA, data visualization, feature engineering, and multiple machine learning approaches including Logistic Regression, Decision Trees, Random Forests, and Neural Networks.
+## Project Structure
+```
+Project_7_Deep_Learning_Churn_Prediction/
+|-- data/
+|   |-- customer_churn.csv
+|-- notebooks/
+|   |-- EDA_Analysis.ipynb
+|   |-- Model_Training.ipynb
+|-- models/
+|   |-- best_model.pkl
+|   |-- scaler.pkl
+|-- src/
+|   |-- train.py
+|   |-- predict.py
+|-- requirements.txt
+|-- README.md
+```
 
-### Tools & Libraries
-- Python, Pandas, NumPy
-- Matplotlib, Seaborn (Visualization)
-- Scikit-Learn (ML & Deep Learning)
+## Tools & Libraries
+- **Python**, **Pandas**, **NumPy** - Data manipulation
+- **Matplotlib**, **Seaborn** - Data visualization
+- **Scikit-Learn** - Machine Learning & Neural Networks
 
-### Project Workflow
-1. Data Loading & Inspection
-2. Exploratory Data Analysis (EDA)
-3. Data Preprocessing & Feature Engineering
-4. ML Models: Logistic Regression, Decision Tree, Random Forest
-5. Deep Learning: Neural Network (MLP)
-6. Model Comparison (Accuracy, ROC Curves, Confusion Matrices)
+## Models Trained
+1. Logistic Regression
+2. Decision Tree Classifier
+3. Random Forest Classifier
+4. Neural Network (MLPClassifier)
+
+## How to Run
+```bash
+pip install -r requirements.txt
+python src/train.py
+python src/predict.py
+```
