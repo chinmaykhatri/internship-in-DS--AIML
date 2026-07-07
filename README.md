@@ -1,171 +1,136 @@
-# 📊 Data Science & AI/ML — Summer Internship Training Program
-
-> A structured, hands-on training journey through **Python programming**, **Data Analysis**, **Machine Learning**, and **Web-based Dashboard Development**, completed under the **GRRAS Solutions** internship program (SITP).
-
----
-
-## 🎯 Program Overview
-
-This repository documents a **45-day intensive training** covering the complete Data Science pipeline — from Python fundamentals to building production-ready ML models and interactive analytics dashboards. Each day builds on the previous one, progressing from core programming concepts to advanced machine learning techniques.
-
----
-
-## 🗂️ Repository Structure
-
-```
-├── README.md
-└── GRASS/
-    ├── Day_1.py  –  Day_19.py      # Python fundamentals & libraries (.py scripts)
-    ├── Day_20.ipynb – Day_34.ipynb  # Advanced ML & analysis (Jupyter Notebooks)
-    ├── Mini_Project_1.py            # Student Management System (OOP)
-    ├── Assessment_1.ipynb           # Comprehensive skills assessment
-    ├── app.py                       # Streamlit E-Commerce Analytics Dashboard
-    ├── ecommerce_sales.ipynb        # E-Commerce sales analysis project
-    ├── Diamond_price_prediction.ipynb  # ML regression model project
-    ├── *.csv / *.json / *.xlsx      # Datasets used across exercises
-    └── *.png / *.jpg                # Generated plots and visualizations
-```
-
----
-
-## 📅 Day-by-Day Curriculum
-
-### Phase 1 — Python Fundamentals (Days 1–6)
-
-| Day | Topic | Key Concepts |
-|-----|-------|-------------|
-| **Day 1** | Variables & Memory | Variable declaration, `id()`, memory referencing |
-| **Day 2** | Type Conversion & Operators | `input()`, type casting, arithmetic & logical operators |
-| **Day 3** | Conditional Statements | `if`, `elif`, `else`, nested conditions |
-| **Day 4** | Functions | `def`, parameters, `*args`, `**kwargs`, lambda, recursion |
-| **Day 5** | Data Structures — Dictionaries | `.get()`, `.keys()`, `.values()`, `.items()`, nested dicts |
-| **Day 6** | Modules & Imports | `math`, `random`, `os`, custom modules |
-
-### Phase 2 — Object-Oriented Programming (Days 7–8)
-
-| Day | Topic | Key Concepts |
-|-----|-------|-------------|
-| **Day 7** | OOP Fundamentals | Classes, Objects, `__init__`, Encapsulation, Inheritance, Polymorphism |
-| **Day 8** | Class Methods & `self` | Instance methods, class attributes, method chaining |
-
-### Phase 3 — NumPy (Days 9–12)
-
-| Day | Topic | Key Concepts |
-|-----|-------|-------------|
-| **Day 9** | NumPy Introduction | Arrays vs Lists, performance comparison, `ndarray` |
-| **Day 10** | Array Operations | Indexing, slicing, broadcasting, mathematical operations |
-| **Day 11** | Array Reshaping | `reshape()`, `flatten()`, `ravel()`, `transpose()` |
-| **Day 12** | Sorting & Aggregation | `sort()`, axis-based sorting, statistical functions |
-
-### Phase 4 — Pandas (Days 13–18)
-
-| Day | Topic | Key Concepts |
-|-----|-------|-------------|
-| **Day 13** | Pandas Introduction | Series, DataFrames, reading data |
-| **Day 14** | Series & DataFrames | 1D Series, 2D DataFrames, indexing |
-| **Day 15** | Data Reading & Exploration | `read_json()`, `head()`, `tail()`, `describe()`, `info()` |
-| **Day 16** | Data Manipulation | Filtering, column operations, `apply()`, `groupby()` |
-| **Day 17** | Sorting & Aggregation | `sort_values()`, `agg()`, multi-column sorting |
-| **Day 18** | Handling Missing Values | `isnull()`, `fillna()`, `dropna()`, imputation strategies |
-
-### Phase 5 — Data Visualization (Day 19)
-
-| Day | Topic | Key Concepts |
-|-----|-------|-------------|
-| **Day 19** | Matplotlib | Line plots, bar charts, scatter plots, subplots, styling |
-
-### Phase 6 — Machine Learning & Advanced Analysis (Days 20–34)
-
-| Day | Topic | Format |
-|-----|-------|--------|
-| **Day 20** | Exploratory Data Analysis (EDA) | Jupyter Notebook |
-| **Day 21** | Advanced EDA & Feature Engineering | Jupyter Notebook |
-| **Day 24** | Supervised Learning Foundations | Jupyter Notebook |
-| **Day 25** | Classification Algorithms | Jupyter Notebook |
-| **Day 26** | Regression Models | Jupyter Notebook |
-| **Day 27** | Model Evaluation & Metrics | Jupyter Notebook |
-| **Day 29** | Advanced ML Techniques | Jupyter Notebook |
-| **Day 30** | Ensemble Methods | Jupyter Notebook |
-| **Day 31** | Deep Learning Introduction | Jupyter Notebook |
-| **Day 32** | Neural Network Implementation | Jupyter Notebook |
-| **Day 33** | Model Optimization | Jupyter Notebook |
-| **Day 34** | Final Review & Best Practices | Jupyter Notebook |
-
----
-
-## 🚀 Projects
-
-### 1. Student Management System — `Mini_Project_1.py`
-An OOP-based console application for managing student records with full CRUD operations — create, read, update, and delete student entries using classes and methods.
-
-### 2. E-Commerce Sales Analysis — `ecommerce_sales.ipynb`
-End-to-end exploratory analysis of an e-commerce dataset (`ecommerce_sales_data.csv`) with:
-- Sales trend identification
-- Customer segmentation
-- Revenue pattern analysis
-- Data cleaning and visualization
-
-### 3. E-Commerce Analytics Dashboard — `app.py`
-A **Streamlit**-powered interactive web dashboard built with Plotly, Seaborn, and Matplotlib for real-time e-commerce data exploration and KPI tracking.
-
-### 4. Diamond Price Prediction — `Diamond_price_prediction.ipynb`
-A complete ML regression pipeline using the `diamonds.csv` dataset:
-- Feature engineering (carat, cut, color, clarity)
-- Model training and evaluation
-- Price prediction with a serialized model (`diamond_price_model.pkl`)
-
----
-
-## 🛠️ Tech Stack
-
-| Category | Tools & Libraries |
-|----------|------------------|
-| **Language** | Python 3.x |
-| **Data Analysis** | Pandas, NumPy |
-| **Visualization** | Matplotlib, Seaborn, Plotly |
-| **Machine Learning** | Scikit-learn |
-| **Deep Learning** | TensorFlow / Keras |
-| **Web Dashboard** | Streamlit |
-| **Notebooks** | Jupyter Notebook |
-| **Serialization** | Pickle |
-
----
-
-## 📊 Datasets Included
-
-| File | Description |
-|------|-------------|
-| `diamonds.csv` | 50,000+ diamond records with carat, cut, color, clarity, and price |
-| `ecommerce_sales_data.csv` | E-commerce transaction records for sales analysis |
-| `student-data.json` | Student records for Pandas exercises |
-| `temperature_data.json` | Temperature readings for data manipulation practice |
-| `data.json` | General-purpose JSON dataset |
-| `file1.csv`, `file1.json`, `file1.xlsx`, `file2.json` | Multi-format datasets for I/O exercises |
-
----
-
-## 📈 Sample Visualizations
-
-The repository includes generated plots demonstrating various visualization techniques:
-- Line charts and bar graphs
-- Subplots and multi-panel figures
-- Statistical distribution plots
-
----
-
-## 📜 License
-
-This project is part of an academic internship program and is intended for educational purposes.
-
----
-
-## 🙏 Acknowledgements
-
-- **GRRAS Solutions** — For providing the structured training program and mentorship
-- **SITP (Summer Internship Training Program)** — For the opportunity to learn and apply Data Science concepts hands-on
-
----
+# 🚀 Data Science & AI/ML — Complete Internship & Capstone Portfolio
 
 <p align="center">
-  <i>Built with 💡 curiosity and ☕ code during the Data Science & AI/ML internship at GRRAS Solutions</i>
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Deep%20Learning-TensorFlow%20%2F%20Keras-red?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/Web%20Apps-Streamlit%20%2F%20Flask%20%2F%20Django-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Complete-success?style=for-the-badge" />
+</p>
+
+> **An exhaustive, industry-grade Data Science and Artificial Intelligence repository** documenting a structured **45-Day Intensive Training Curriculum (GRRAS Solutions SITP)** alongside a portfolio of **9 Full-Stack ML/AI Capstone Projects** featuring end-to-end data pipelines, exploratory data analysis, predictive modeling, deep learning, and interactive web deployment.
+
+---
+
+## 🌟 Executive Summary
+
+This repository represents the synthesis of foundational programming, statistical data analysis, and advanced machine learning engineering. It is structured into two core pillars:
+
+1. **🎓 GRASS Training Curriculum (`GRASS/`)**: A chronological 45-day intensive learning path covering Python fundamentals, Object-Oriented Programming, data manipulation, visualization, regression, classification, and Streamlit dashboards.
+2. **🏆 9 Industry Capstone Projects (`Projects/`)**: Production-ready, full-stack Data Science and AI/ML applications solving real-world business problems across e-commerce, finance, entertainment, automotive, and telecommunications.
+
+---
+
+## 🗂️ Universal Repository Architecture
+
+```
+📦 Data-Science-AI-ML-SITP
+├── 📂 GRASS/                           # 45-Day Training & Practice Modules
+│   ├── 📜 Day_1.py to Day_19.py        # Python Core, OOP, Data Structures
+│   ├── 📓 Day_20.ipynb to Day_34.ipynb # Advanced ML, EDA & Statistical Modeling
+│   ├── 📊 *.csv, *.json, *.xlsx        # Training Datasets & Assets
+│   └── 🖥️ app.py                       # Streamlit E-Commerce Dashboard
+│
+└── 📂 Projects/                        # 9 Complete Industry Capstone Projects
+    ├── 📁 Project_1_Bike_Price_Prediction/
+    ├── 📁 Project_2_Population_Growth_Forecasting/
+    ├── 📁 Project_3_Movie_Recommendation_System/
+    ├── 📁 Project_4_Stock_Price_Prediction/
+    ├── 📁 Project_5_ML_Project/
+    ├── 📁 Project_6_Text_Recognizer/
+    ├── 📁 Project_7_Deep_Learning_Churn_Prediction/
+    ├── 📁 Project_8_Retail_Sales_Dashboard/
+    └── 📁 Project_9_Credit_Card_Fraud_Detection/
+```
+
+---
+
+## 🏆 The 9 Capstone Projects Portfolio
+
+Each project is architected with industry-standard practices: dedicated datasets, Jupyter notebooks for exploratory data analysis, reusable modular Python scripts (`src/`), saved trained models (`models/`), and web deployment interfaces (`app.py` / Flask / Django).
+
+| # | Project Name | Domain | Core AI/ML Technologies | Deployment / UI | Key Highlights |
+|---|---|---|---|---|---|
+| **01** | [**Used Bike Price Prediction**](./Projects/Project_1_Bike_Price_Prediction) | Automotive / E-Commerce | Random Forest, Extra Trees, Linear Reg | **Flask Web App** (`app.py`) | Predicts resale value of used motorcycles based on mileage, age, brand, and engine capacity. |
+| **02** | [**Population Growth Forecasting**](./Projects/Project_2_Population_Growth_Forecasting) | Demographics / Time-Series | Polynomial Regression, Time-Series | **Jupyter Analytics** | Analyzes historical census trends to project future urban and rural demographic shifts. |
+| **03** | [**Movie Recommendation Engine**](./Projects/Project_3_Movie_Recommendation_System) | Entertainment / RecSys | Cosine Similarity, TF-IDF, NLP | **Django Web App** | Content-based recommendation engine suggesting movies based on plot tags, actors, and directors. |
+| **04** | [**Stock Price Prediction**](./Projects/Project_4_Stock_Price_Prediction) | Finance / FinTech | Deep Learning (LSTM), RNN | **Streamlit App** | Multi-layer LSTM neural network forecasting stock market closing prices with interactive charts. |
+| **05** | [**Regression Model Benchmarking**](./Projects/Project_5_ML_Project) | Statistical Modeling | Ridge, Lasso, ElasticNet, Polynomial | **Scikit-Learn Pipeline** | Comprehensive comparative analysis of regularization techniques on multi-variable regression. |
+| **06** | [**Optical Character Recognition (OCR)**](./Projects/Project_6_Text_Recognizer) | Computer Vision | Tesseract OCR, OpenCV, Image Proc | **Python Scripting** | Extracts machine-encoded text from scanned documents, invoices, and natural scene images. |
+| **07** | [**Customer Churn Prediction**](./Projects/Project_7_Deep_Learning_Churn_Prediction) | Telecom / CRM | Logistic Reg, Random Forest, MLP Neural Net | **CLI / Standalone App** | Identifies at-risk telecom customers using classic ML and deep neural networks with 84%+ accuracy. |
+| **08** | [**Retail Sales Executive Dashboard**](./Projects/Project_8_Retail_Sales_Dashboard) | Retail / Business Intelligence | EDA, KPI Metrics, Aggregation | **Streamlit Dashboard** | Real-time interactive executive dashboard with category filtering, geographical heatmaps, and ROI KPIs. |
+| **09** | [**Credit Card Fraud Detection**](./Projects/Project_9_Credit_Card_Fraud_Detection) | Cybersecurity / FinTech | Random Forest, Imbalanced Learning (SMOTE) | **CLI / Standalone App** | High-precision fraud detection engine achieving 99% accuracy on highly imbalanced transaction data. |
+
+---
+
+## 📅 Part 1: GRASS SITP 45-Day Training Roadmap
+
+### Phase 1 — Python Core & Object-Oriented Programming (Days 1–8)
+* **Days 1–3**: Variables, Memory referencing, Type casting, Arithmetic/Logical operators, Conditional branching.
+* **Days 4–6**: Advanced Functions (`*args`, `**kwargs`, lambda, recursion), Dictionaries, Modules & File I/O.
+* **Days 7–8**: Object-Oriented Programming (Classes, Instances, Encapsulation, Polymorphism, Inheritance).
+
+### Phase 2 — Data Manipulation & Visualization (Days 9–19)
+* **Days 9–13**: NumPy multidimensional arrays, vectorized operations, Pandas DataFrames, indexing, merging, grouping.
+* **Days 14–19**: Exploratory Data Analysis (EDA), Data cleaning, missing value imputation, Matplotlib & Seaborn visualization.
+
+### Phase 3 — Machine Learning & Analytics Projects (Days 20–34)
+* **Days 20–25**: Supervised Learning algorithms (Linear Regression, Logistic Regression, Decision Trees, KNN).
+* **Days 26–30**: Model evaluation metrics (ROC-AUC, Precision-Recall, F1-Score, MSE, R2), Cross-validation, GridSearch.
+* **Days 31–34**: Capstone dashboard building with Streamlit, E-Commerce sales analytics, and Diamond price prediction.
+
+---
+
+## 🛠️ Complete Technical Stack
+
+| Category | Technologies & Tools |
+|---|---|
+| **Programming Languages** | Python 3.10+, HTML5, CSS3, JavaScript |
+| **Data Processing & EDA** | Pandas, NumPy, SciPy |
+| **Data Visualization** | Matplotlib, Seaborn, Plotly, Streamlit Charts |
+| **Machine Learning** | Scikit-Learn, XGBoost, LightGBM, Statsmodels |
+| **Deep Learning & CV** | TensorFlow, Keras, OpenCV, PyTesseract |
+| **Web Frameworks** | Streamlit, Flask, Django |
+| **Development & DevOps** | Git, GitHub, Jupyter Notebooks, VS Code, Pickle / Joblib |
+
+---
+
+## 🚀 Quick Start Guide
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/chinmaykhatri/internship-in-DS--AIML.git
+cd internship-in-DS--AIML
+```
+
+### 2. Create a Virtual Environment
+```bash
+# On Windows
+python -m venv venv
+venv\Scripts\activate
+
+# On macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+Each project contains its own dedicated `requirements.txt`. To run any project, navigate to its directory and install:
+```bash
+cd Projects/Project_8_Retail_Sales_Dashboard
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+---
+
+## 👨‍💻 Author & Acknowledgements
+
+* **Author**: Chinmay Khatri
+* **Program**: Summer Internship Training Program (SITP) in Data Science, AI & Machine Learning
+* **Mentorship & Organization**: GRRAS Solutions Pvt. Ltd.
+
+---
+<p align="center">
+  <i>Engineered with excellence for real-world artificial intelligence and data science deployment.</i>
 </p>

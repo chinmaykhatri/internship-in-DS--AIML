@@ -1,71 +1,49 @@
-# Stock Price Prediction – Predict the Future, Today.
+# 📈 Project 4: Deep Learning Stock Price Prediction Engine
 
-Welcome to a project built with curiosity, passion, and a love for learning.  
-This is not just code — it’s a step toward understanding how data and AI can help us see patterns in the stock market.
+<p align="left">
+  <img src="https://img.shields.io/badge/Deep%20Learning-LSTM%20%2F%20RNN-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Framework-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/Domain-FinTech-blue?style=for-the-badge" />
+</p>
 
-The model predicts stock prices and shows them compared to actual values on a graph.
-![Output](OutPut.gif)
-
-## What This Project Is About
-
-This project uses **machine learning** (LSTM model) to predict stock prices based on historical data.
-
-It takes real stock data, processes it, trains a deep learning model, and then makes predictions.  
-If you’re new to ML or just curious about the stock market, this is a great place to start.
+## 📋 Executive Overview
+Financial markets are notoriously volatile and complex. This project builds a **Long Short-Term Memory (LSTM)** neural network capable of capturing long-term temporal dependencies in historical stock market data to forecast closing prices. Integrated with an interactive **Streamlit dashboard**, users can visualize moving averages, trend indicators, and future price trajectories in real time.
 
 ---
 
-## What You’ll Learn
-
-- How to collect stock data using Yahoo Finance
-- How to clean and prepare time-series data
-- How LSTM (a type of neural network) works for prediction
-- How to visualize stock price predictions vs real prices
-
----
-
-## Tools & Libraries Used
-
-- Python  
-- Pandas & NumPy  
-- Matplotlib  
-- Scikit-learn  
-- TensorFlow / Keras  
-- yfinance (Yahoo Finance API)
-
----
-
-## How to Run It
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/AdilShamim8/Stock_Price_Prediction.git
-   cd Stock_Price_Prediction
+## 🗂️ Directory Architecture
+```
+Project_4_Stock_Price_Prediction/
+├── app.py                     # Streamlit interactive web dashboard
+├── stock_model_lstm.h5        # Trained Keras LSTM deep learning model
+├── data/
+│   └── historical_stock_data.csv # Multi-year daily stock price records
+├── notebooks/
+│   └── LSTM_Training.ipynb    # Deep learning architecture exploration
+└── README.md                  # Project documentation
 ```
 
-2. Install the required libraries:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the project:
-
-   ```bash
-   python main.py
-   ```
 ---
 
-### Want to Contribute?
+## 🧠 Deep Learning Architecture (LSTM)
+* **Sequence Windowing**: Data is formatted into 60-day sliding time windows ($X_{t-60} \dots X_{t-1}$) to predict day $X_t$.
+* **Network Layers**:
+  * Layer 1: LSTM (50 units, return sequences = True) + Dropout (0.2)
+  * Layer 2: LSTM (50 units, return sequences = False) + Dropout (0.2)
+  * Layer 3: Dense Output Layer (1 unit, Linear activation for continuous price estimation)
+* **Optimization**: Trained using the **Adam optimizer** and **Mean Squared Error (MSE)** loss function over 50 epochs.
 
-Feel free to fork this repo, play with the code, and improve it.
-Pull requests and suggestions are always welcome!
+---
 
-### Connect With Me
+## 💻 How to Run Locally
 
-**Made by Adil Shamim**
-Let’s connect and build cool things together.
+### 1. Install Requirements
+```bash
+pip install streamlit tensorflow keras pandas numpy matplotlib scikit-learn yfinance
+```
 
-* LinkedIn: [adilshamim8](https://www.linkedin.com/in/adilshamim8)
-* Kaggle: [adilshamim8](https://www.kaggle.com/adilshamim8)
-* X: [adil_shamim8](https://x.com/adil_shamim8)
+### 2. Launch Streamlit Dashboard
+```bash
+streamlit run app.py
+```
+Open your browser at `http://localhost:8501`, input any stock ticker symbol (e.g., `AAPL`, `GOOGL`, `TCS.NS`), and explore interactive price predictions.
